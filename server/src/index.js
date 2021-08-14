@@ -16,5 +16,6 @@ app.use(morgan("tiny"));
 
 let PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
+  console.clear();
   console.log("Server started on port %d", PORT);
 });
