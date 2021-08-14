@@ -8,14 +8,12 @@ const SignUpForm = () => {
       </div>
       <span className="justify-center text-sm text-center text-gray-500 flex-items-center dark:text-gray-400">
         Already have an account ?
-        <Router>
-          <Link
-            to="/signin"
-            className="text-sm text-blue-500 underline hover:text-blue-700"
-          >
-            Sign in
-          </Link>
-        </Router>
+        <Link
+          to="/signin"
+          className="text-sm text-blue-500 underline hover:text-blue-700"
+        >
+          Sign in
+        </Link>
       </span>
       <div className="p-6 mt-8">
         <form action="#">

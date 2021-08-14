@@ -1,10 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Router, Switch } from "react-router-dom";
 import LoginPage from "./pages/LogIn";
 import SignUpPage from "./pages/SignUp";
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Switch>
         <Route path="/signin">
           <LoginPage />
@@ -13,7 +13,7 @@ function App() {
           <SignUpPage />
         </Route>
       </Switch>
-    </Router>
+    </BrowserRouter>
   );
 }
 
